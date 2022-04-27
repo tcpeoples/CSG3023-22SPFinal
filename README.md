@@ -41,3 +41,5 @@ The ball moves with the paddle until the player presses the “Space” key. The
 Prototype scene and objects have been created.
 
 Only the 1X1X1 ball object (prefab) needs to be created.  
+
+![Brick Basher Game sketch](doc-imgs/brickBasher-Sketch.png)
