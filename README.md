@@ -17,6 +17,7 @@ Based on the classic arcade game “Breakout” this action game prototype will 
 - Bricks (spawner) – empty object to hold the instantiate bricks. Use the BrickSpwaner class to Instantiate bricks, for 7 columns (y) for 7 rows (x). 
 - Ball – prefab sphere. The ball should bounce using a Physics Material. 
   - The ball should have a RigidBody with no gravity, sues a small mass with no drag. 
+  - Ball should have an audio source for the bounce clip.
 - Brick – prefab object. Art team has already placed in prefab folder
 
 **Visuals**
