@@ -1,5 +1,5 @@
 /**** 
- * Created by: Akram Taghavi-Burris
+ * Created by: Bob Baloney
  * Date Created: April 20, 2022
  * 
  * Last Edited by: 
@@ -16,16 +16,16 @@ using UnityEngine;
 public class BrickSpawner : MonoBehaviour
 {
    
-    public GameObject brickPrefab; //brick prefab
-    public float paddingBetweenBricks = 0.25f; //space between bricks
-    private Vector2 brickPadding = new Vector2(0,0); //the brick padding x and y 
+    public GameObject brickPrefab; 
+    public float paddingBetweenBricks = 0.25f; 
+    private Vector2 brickPadding = new Vector2(0,0);  
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-       //brick padding is the width/height of the brick plust the padding between
+       //brick padding is the width/height of the brick plus the padding between
        brickPadding.x = brickPrefab.transform.localScale.x + paddingBetweenBricks;
        brickPadding.y = brickPrefab.transform.localScale.y + paddingBetweenBricks;
 
@@ -34,11 +34,12 @@ public class BrickSpawner : MonoBehaviour
         {
             for(int x=0; x < 7; x++)
             {
-                Vector3 pos = new Vector3(x * brickPadding.x , y * brickPadding.y, 0); //set new position multipled by the padding
-
-                GameObject brickGo = Instantiate<GameObject>(brickPrefab); //instancate the brick
-                brickGo.transform.parent = transform; //set the parent transform to this (brick spwaner) transform
-                brickGo.transform.localPosition = pos; //set the local position of the brick 
+                Vector3 pos = new Vector3(x * brickPadding.x , y * brickPadding.y, 0); 
+              
+                brickGo = Instantiate.brickPrefab; 
+              
+                brickGo.transform.parent = transform; 
+                brickGo.transform.localPosition = pos; 
 
             }//end for(int x=0; x < 9; x++)
         }//end for (int y=0; y < 9; y++)

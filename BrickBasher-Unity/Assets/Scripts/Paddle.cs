@@ -1,5 +1,5 @@
 /**** 
- * Created by: Akram Taghavi-Burris
+ * Created by: Bob Baloney
  * Date Created: April 20, 2022
  * 
  * Last Edited by: 
@@ -22,12 +22,6 @@ public class Paddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xAxis = Input.GetAxis("Horizontal");
-        //Change the transform based on the axis
 
-        Vector3 pos = transform.position; //get the position
-
-        pos.x += xAxis * speed * Time.deltaTime; //change x by speed
-        transform.position = pos; //set new position
     }//end Update()
 }
