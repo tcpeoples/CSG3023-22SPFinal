@@ -23,5 +23,12 @@ public class Paddle : MonoBehaviour
     void Update()
     {
 
+        float xAxis = Input.GetAxis("Horizontal");
+
+        Vector3 pos = transform.position;
+        pos.x += xAxis * speed * Time.deltaTime;
+        transform.position = pos;
+
+
     }//end Update()
 }
